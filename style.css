@@ -1,0 +1,166 @@
+/* General styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: rgb(10, 12, 14);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.title {
+    margin: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.left {
+    width: 45%;
+    height: 80%;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgb(31, 33, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    width: 45%;
+    height: 90%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(43, 144, 226) rgb(31, 33, 37);
+}
+
+.right::-webkit-scrollbar {
+    width: 12px;
+}
+
+.right::-webkit-scrollbar-track {
+    background-color: rgb(10, 12, 14);
+}
+
+.right::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 144, 226);
+    border-radius: 10px;
+}
+
+.right::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(67, 156, 230);
+}
+
+/* Form styles */
+h1 {
+    color: rgb(43, 144, 226);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"] {
+    width: 70%;
+    padding: 2%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 90px;
+    border: 1px solid rgb(43, 144, 226);
+    background-color: rgb(31, 33, 37);
+    color: white;
+    caret-color: white;
+    outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgb(31, 33, 37) inset;
+    transition: background-color 5000s ease-in-out;
+}
+
+button {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(43, 144, 226);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send {
+    width: 75%;
+}
+
+button:hover {
+    background-color: rgb(67, 156, 230);
+}
+
+/* Notes styles */
+.notes-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgb(31, 33, 37);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 15px;
+    color: white;
+}
+
+.date-time {
+    font-size: 12px;
+    color: rgb(43, 144, 226);
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.note-description {
+    display: none;
+    font-size: 13px;
+    color: rgb(200, 200, 200);
+    margin-top: 5px;
+}
+
+button.delete-btn {
+    background: transparent;
+    color: rgb(67, 156, 230);
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+button.delete-btn:hover {
+    color: rgb(123, 182, 230);
+}
