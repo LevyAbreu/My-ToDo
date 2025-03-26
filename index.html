@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My ToDo</title>
+</head>
+<body>
+    <h1 class="title">To Do</h1>
+    <div class="container">
+        <div class="left">
+            <div class="content">
+                <form id="noteForm">
+                    <input type="text" id="noteTitleInput" placeholder="Enter your note title" required>
+                    <input type="text" id="noteDescriptionInput" placeholder="Description" required>
+                    <input type="date" id="noteDateInput"><br>
+                    <button type="submit" class="send">Add ToDo</button>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <div id="noteList" class="notes-container">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
