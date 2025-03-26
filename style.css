@@ -10,10 +10,6 @@ body {
     flex-direction: column;
 }
 
-.title {
-    margin: 25px;
-}
-
 .container {
     display: flex;
     justify-content: space-between;
